@@ -192,8 +192,8 @@
     "description": "The Inari granted your wish.\n\nYou win!",
     "options": []
   }
-}
  "demand": {
     "description": "You were disrespectful to the Inari and was burnd to ashes.\n\nYou lose.",
     "options": []
   }
+}
