@@ -5,8 +5,8 @@ import shrine
 
 assert sys.version_info >= (3,4), 'This script requires at least Python 3.4'
 
-with open('inari.shrine') as inari_data:
-		world = shrine.load(inari_data)
+with open('zork.shrine') as shrine_data:
+		world = shrine.load(shrine_data)
 		
 def get_response(response):
 		'''Normalize user input and map to dictionary '''

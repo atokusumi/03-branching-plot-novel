@@ -1,0 +1,199 @@
+{
+"fushimi_inari_shrine": {
+    "description": "You are standing infront of a torii, an entrance to the fushimi inari shrine. There you see a shadow behind teh bushes near the torii, and the shadow asks "are you here to meet the god of this shrine, Inari?"",
+    "options": [
+      {
+        "option": "yes",
+        "goto": "yes"
+      },
+      {
+        "option": "no",
+        "goto": "no"
+      }
+    ]
+  },
+  "yes": {
+    "description": "The shadow says "then you must bring with you an offering".",
+    "options": [
+      {
+        "option": "take half an hour to run to the nearest market and buy oinari.",
+        "goto": "buy_oinari"
+      },
+      {
+        "option": "go into the mountain to hunt down a deer.",
+        "goto": "hunt_deer"
+      }
+    ]
+  },
+  "buy_oinari": {
+    "description": "You are back at the entrance of the shrine, and the shadow left a message on a paper.\n\nA letter saying \"There are many dangers ahead. Do you still wish to see Inari? If so, enter the torii, and never stop moving forward.\" lies by the door",
+    "options": [
+      {
+        "option": "enter torii",
+        "goto": "enter_torii"
+      }
+    ]
+  },
+  "no": {
+    "description": "You do not wish to see Inari, and the shadow says that you are stuck between a demintions, the worlds of humans and gods.",
+    "options": [
+      {
+        "option": "enter the torii to seek help from inari",
+        "goto": "enter_torii_2"
+      },
+      {
+        "option": "Don't trust what the shadow said and leave",
+        "goto": "leave"
+      }
+    ]
+  },
+  "hunt_deer": {
+    "description": "You are in the maountine hunting a deer. There you meet a nice villager who just so happens that he got himself a deer and offers a portion of the meat.",
+    "options": [
+      {
+        "option": "take the portion",
+        "goto": "take_the_deer"
+      },
+      {
+        "option": "got grossed out and runs away",
+        "goto": "run_away"
+      },
+      {
+        "option": "don't take it and go hunt your own deer",
+        "goto": "go_hunt"
+      }
+    ]
+  },
+  "go_hunt": {
+    "description": "As you were wondering the mountain setting up traps, you found your self a deer with a magnificant horn.",
+    "options": [
+      {
+        "option": "hunt the deer",
+        "goto": "take_the_deer"
+      },
+      {
+        "option": "couldn't kill him becaseu he was just too beautiful",
+        "goto": "no_hunt"
+      }
+    ]
+  },
+  "enter_torii": {
+    "description": "A long path of stairs are infront of you. As you walk up the stairs, a young woman's voice calls you.",
+    "options": [
+      {
+        "option": "stop and listen to the woman",
+        "goto": "woman"
+      },
+      {
+        "option": "ignore and contine up the stairs",
+        "goto": "stairs"
+      }
+    ]
+  },
+  "enter_torii_2": {
+    "description": "The shadow left a message on a paper.\n\nA letter saying \"Enter the torii, and never stop moving forward." \ A long path of stairs are infront of you. As you climb up the stairs you saw the main shrine building at the top.",
+    "options": [
+      {
+        "option": "climb up to the top",
+        "goto": "meet_inari_2"
+      },
+      {
+        "option": "take a break",
+        "goto": "take_a_break"
+      }
+    ]
+  },
+  "take_the_deer": {
+    "description": "You took the portion of the deer and found that the shadow left a message on a paper.\n\nA letter saying \"Enter the torii, and never stop moving forward." \ You entered the torii. A long path of stairs are infront of you. As you slimb up the stairs you heard an animal cry not far from where you are.",
+    "options": [
+      {
+        "option": "got scared and run away back down the stairs",
+        "goto": "run_away"
+      },
+      {
+        "option": "got scared and run to the top of the stairs",
+        "goto": "meet_inari"
+      }
+    ]
+  },
+  "no_hunt": {
+    "description": "The deer notice you and runs away. You saw something dropped and left where the deer was. You picked it up and saw it was a stone with a beautiful carving. You decided to hid to see Inari, and enter the torii. As you climb up the stairs, you saw the main shrine building at the top.",
+    "options": [
+      {
+        "option": "run towards the top with all of your might",
+        "goto": "meet_inari"
+      },
+      {
+        "option": "you saw the goal line, and decideds to take a little break and sat down",
+        "goto": "take_break"
+      }
+    ]
+  },
+  "take_break": {
+    "description": "As you seat down, a wolf came out of the bushes and attaks you!\n\nYou lose. .",
+    "options": []
+  },
+  "meet_inari": {
+    "description": "You got to the main shrine building, and there you see a silver fox standing at the front of the building look towards you.",
+    "options": [
+      {
+        "option": "you gave the offering to the Inari",
+        "goto": "offering"
+      },
+      {
+        "option": "You demanded the fox to grant your wish RIGHT NOW!",
+        "goto": "demand"
+      }
+    ]
+  },
+  "meet_inari_2": {
+    "description": "You got to the main shrine building, and there you see a silver fox standing at the front of the building look towards you.",
+    "options": [
+      {
+        "option": "You asked the inari to let you go home",
+        "goto": "home"
+      },
+      {
+        "option": "you got creeded out by the mysterious being and ran away",
+        "goto": "run_away"
+      }
+    ]
+  },
+  "stairs": {
+    "description": "You got to the main shrine building, and there you see a silver fox standing at the front of the building look towards you.",
+    "options": [
+      {
+        "option": "you gave the Inari the offering",
+        "goto": "offering_2"
+      },
+      {
+        "option": "You demanded the fox to grant your wish RIGHT NOW!",
+        "goto": "demand"
+      }
+    ]
+  },
+  "woman": {
+    "description": "You didn't fallow the shadow's instruction. You have been caught by the spider woman and got eaten.\n\nYou lose.",
+    "options": []
+  },
+  "offering": {
+    "description": "The Inari was supprised by the offering. He looked at the stone so nostalgically and offered to grant you three wishes!\n\nYou win!",
+    "options": []
+  },
+  "leave": {
+    "description": "You got stuck between demintions and can't go home.\n\nYou lose.",
+    "options": []
+  },
+  "run_away": {
+    "description": "You couldn't get an offering and couldn't meet with inari.\n\nYou lose.",
+    "options": []
+  },
+  "offering_2": {
+    "description": "The Inari granted your wish.\n\nYou win!",
+    "options": []
+  }
+ "demand": {
+    "description": "You were disrespectful to the Inari and was burnd to ashes.\n\nYou lose.",
+    "options": []
+  }
+}
