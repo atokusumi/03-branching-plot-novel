@@ -1,54 +1,54 @@
 #!/Library/Frameworks/Python.framework/Versions/3.6/bin
 
 import sys
-import shrine
+import json
 
 assert sys.version_info >= (3,4), 'This script requires at least Python 3.4'
 
-with open('zork.shrine') as shrine_data:
-		world = shrine.load(shrine_data)
+with open('shrine.json') as json_data:
+		world = json.load(json_data)
 		
 def get_response(response):
-		'''Normalize user input and map to dictionary '''
-		try:
-				return int(response)-1
-		expect ValueError:
-				return -1
+	'''Normalize user input and map to dictionary '''
+	try:
+			return int(response) - 1
+	except ValueError:
+			return -1
 				
-def print_reponse(count, repoonses):
-		''' Print out the response option '''
-		return str(count + 1)
+def print_response(count, responses):
+	''' Print out the response option '''
+	return str(count + 1)
 		
 def check_quit(response):
-		''' Check if the user quit the program '''
-		response = str(response)
-		if response.loer() == 'q' or reponse.lower == 'quit':
-				return True
-		return False
+	''' Check if the user quit the program '''
+	response = str(response)
+	if response.lower() == 'q' or response.lower == 'quit':
+		return True
+	return False
 		
 location = 'fushimi_inari_shrine'
 
 game_is_running = True
 while game_is_running:
 		
-		current = world[location]
-		print(current['description'])
+	current = world[location]
+	print(current['description'])
+
+	if len(current['options']) == 0:
+		continue
+	for count, option in enumerate(current['options']):
+		print('[' + print_response(count,current['options']) + '] ' + option['option'])
+	print('[q] to quit')
 		
-		if len(current['options']0 == 0:
-			continue
-		for count, option in enumerate(current['options']):
-				print('[' + print_reponse(count,current['options']) + ' ] ' + option['option'])
-		print('[q] to quit')
-		
-		reponse = input('What would you do?')
-		if checking_quit(response):
-				game_is_running = False
-				continue
+	response = input('What would you do?')
+	if check_quit(response):
+		game_is_running = False
+		continue
 				
-		response = get_response(response)
+	response = get_response(response)
 		
-		for count,option in enumerate(current['options']):
-				if (response == count):
-						location = option['goto']
+	for count,option in enumerate(current['options']):
+		if (response == count):
+			location = option['goto']
 						
-	print('Thanks for playing! See you next time!')
+print('Thanks for playing! See you next time!')
