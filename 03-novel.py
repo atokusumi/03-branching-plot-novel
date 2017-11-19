@@ -33,13 +33,13 @@ while game_is_running:
 		
 	current = world[location]
 	print(current['description'])
-
+	#prints the options that the player has, based on current location's options
 	if len(current['options']) == 0:
 		continue
 	for count, option in enumerate(current['options']):
 		print('[' + print_response(count,current['options']) + '] ' + option['option'])
 	print('[q] to quit')
-		
+	#asks user for a responce and checks to see if game should be quit
 	response = input('What would you do?')
 	if check_quit(response):
 		game_is_running = False

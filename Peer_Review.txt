@@ -1,0 +1,37 @@
+Peer Review Exercise
+Name: Jonathon Brown
+
+Date: 11/18/2017
+
+Peer’s project: Akane's Branching Plot Novel
+
+ 
+
+What is something you learned by reviewing your peer’s project?
+The file types have to be recognizable by the pygame library, because pygame will ignore it even if it's named correctly (example - .shrine isn't a file type it recognizes, but .json is)
+ 
+
+What is something you saw in your peer’s project that you would like to apply to your own programming projects?
+The depth of involvement in making the story for the game. I tend to only try a couple of things and then stop near the bare minimum. The amoun that was added to the story was phenomenal.
+ 
+
+What suggestions would you have for your peer to improve his/her code?
+Checking the spelling for each new line of code written to make sure it's consistent throughout. 
+ 
+
+What could have been clearer or better commented?
+adding comments to trickier sections can help you remember what's supposed to be happening and better troubleshoot when it isn't (ex - added comment for the check_quit)
+ 
+
+Was there anything in the code that was confusing to you? If so, what?
+in the text, there were spots that included \n\ or similar parts, which I believe were supposed to make it appear on a new line...but they were throwing errors and I got it to work by removing them.
+
+ 
+
+What is something he/she could add to the README.md to make it more descriptive?
+Don't forget to customize the readme to talk about what you're specifically trying to accomplish with the game and what you did to do so!
+
+ 
+
+Pay a compliment to your peer based on the quality of his/her code.
+Excellent storywriting and great depth in the amount of options that you gave the player!
